@@ -24,6 +24,29 @@
 </head>
 
 <body id="page-top">
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v7.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="110898373987121">
+  </div>
 
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
@@ -205,10 +228,10 @@
 
   <!-- Map -->
   <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.625094366089!2d-123.10816578444543!3d49.283500779331455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671775ee68f85%3A0x23e0e62171f09a76!2s68%20Water%20St%2C%20Vancouver%2C%20BC%20V6B%201A4%2C%20Canada!5e0!3m2!1sen!2shk!4v1591576136273!5m2!1sen!2shk"></iframe>
     <br />
     <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.625094366089!2d-123.10816578444543!3d49.283500779331455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671775ee68f85%3A0x23e0e62171f09a76!2s68%20Water%20St%2C%20Vancouver%2C%20BC%20V6B%201A4%2C%20Canada!5e0!3m2!1sen!2shk!4v1591576136273!5m2!1sen!2shk"></a>
     </small>
   </section>
 
@@ -228,11 +251,11 @@
         </li>
         <li class="list-inline-item">
           <a class="social-link rounded-circle text-white" href="#">
-            <i class="icon-social-github"></i>
+            <i class="icon-social-instagram"></i>
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
+      <p class="text-muted small mb-0">Copyright &copy; Ulala 2019</p>
     </div>
   </footer>
 
